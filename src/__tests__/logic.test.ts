@@ -6,6 +6,7 @@ describe('calculateTip', () => {
     expect(result).toEqual({
       total: '120.00',
       perPerson: '120.00',
+      tipAmount: '20.00',
     });
   });
 
@@ -14,6 +15,7 @@ describe('calculateTip', () => {
     expect(result).toEqual({
       total: '120.00',
       perPerson: '60.00',
+      tipAmount: '20.00',
     });
   });
 
@@ -22,6 +24,7 @@ describe('calculateTip', () => {
     expect(result).toEqual({
       total: '0.00',
       perPerson: '0.00',
+      tipAmount: '0.00',
     });
   });
 
