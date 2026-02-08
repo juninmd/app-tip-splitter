@@ -1,6 +1,7 @@
 export interface TipResult {
   total: string;
   perPerson: string;
+  tipAmount: string;
 }
 
 /**
@@ -22,5 +23,6 @@ export const calculateTip = (bill: number, tipPct: number, people: number): TipR
   return {
     total: totalBill.toFixed(2),
     perPerson: perPerson.toFixed(2),
+    tipAmount: totalTip.toFixed(2),
   };
 };
